@@ -7,10 +7,24 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerLinks}>
         <Link href="/" className={styles.footerLinksItem}>
-          <h1>Home</h1>
+          <h3>Home</h3>
         </Link>
-        <Link href="/blog" className={styles.footerLinksItem}>
-          <h1>Blog</h1>
+        <Link href="/" className={styles.footerLinksItem}>
+          <h3>Contact</h3>
+        </Link>
+        <Link href="/" className={styles.footerLinksItem}>
+          <h3>FAQ</h3>
+        </Link>
+        <Link href="/" className={styles.footerLinksItem}>
+          <h3>Terms</h3>
+        </Link>
+
+        <Link href="/" className={styles.footerLinksItem}>
+          <h3>Privacy</h3>
+        </Link>
+
+        <Link href="/" className={styles.footerLinksItem}>
+          <h3>Shipping</h3>
         </Link>
       </div>
     </footer>

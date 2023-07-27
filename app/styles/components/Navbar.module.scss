@@ -7,17 +7,19 @@
     align-items: center;
     height: 80px;
     width: 100%;
-    max-width: 90rem;
+    max-width: 78rem;
     margin: 0 auto;
-    border: 2px solid black;
+    // border: 2px solid black;
     box-sizing: border-box;
     margin-bottom: 1em;
+    font-family: "DM Sans", sans-serif;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    font-size: 1.8em;
 }
 .navLinks{
     display: flex;

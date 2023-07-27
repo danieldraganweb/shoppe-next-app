@@ -9,20 +9,18 @@ export function ProductList() {
 
   return (
     <div className={styles.wrapper}>
-      <section>
-        {products.map((product) => (
-          <div key={product.id} className={styles.gridContainer}>
-            <Image
-              src={product.fields?.Image[0].url}
-              alt={product.fields?.Name}
-              width={290}
-              height={290}
-            />
-            <h3>{product?.fields?.Name}</h3>
-            <p>{product.fields?.Price}</p>
-          </div>
-        ))}
-      </section>
+      {products.map((product) => (
+        <div key={product.id} className={styles.gridContainer}>
+          <Image
+            src={product.fields?.Image[0].url}
+            alt={product.fields?.Name}
+            width={370}
+            height={370}
+          />
+          <h3>{product?.fields?.Name}</h3>
+          <p>${product.fields?.Price}</p>
+        </div>
+      ))}
     </div>
   );
 }

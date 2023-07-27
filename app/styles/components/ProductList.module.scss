@@ -1,21 +1,4 @@
 // @use './app/styles/base/' as *;
-// .section{
-//     width: 100%;
-//     max-height: 900px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//     gap: 3em;
-//     margin-bottom: 120px;
-//     max-width: 90rem;
-//     text-align: center;
-//     box-sizing: border-box;
-//     margin: 0 auto;
-//     border : 1px solid red;
-//     position: absolute;
-    
-// }
 
 
 .gridContainer{
@@ -25,28 +8,27 @@
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    max-width: 90rem;
+    max-width: 78rem;
     margin: 0 auto;
-    border : 1px solid red;
-
+    box-sizing: border-box;
+//     box-shadow:
+//     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+//     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+//     0 12.5px 10px rgba(0, 0, 0, 0.06),
+//     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+//     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+//     0 100px 80px rgba(0, 0, 0, 0.12);
+// }
 }
 .wrapper {
     width: 100%;
     max-width: 78rem;
     max-height: 1100px;
     margin: 0 auto;
-    padding: 0  6em 0 6em;
-   display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 3em;
+    gap: 4.2em;
     box-sizing: border-box;
-    border : 1px solid red;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 820px;
+    margin-bottom: 120px;
 }

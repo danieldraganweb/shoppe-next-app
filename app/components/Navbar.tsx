@@ -11,23 +11,23 @@ const Navbar = () => {
         </header>
         <div className={styles.navLinks}>
           <Link href="/" className={styles.navLinkItem}>
-            <h1>Home</h1>
+            <h3>Home</h3>
           </Link>
           <Link href="/blog" className={styles.navLinkItem}>
-            <h1>Blog</h1>
+            <h3>Blog</h3>
           </Link>
           <Link href="/ourstory" className={styles.navLinkItem}>
-            <h1>Our Story</h1>
+            <h3>Our Story</h3>
           </Link>
           <p>|</p>
           <Link href="/contact" className={styles.navLinkItem}>
-            <h1>Search</h1>
+            <h3>Search</h3>
           </Link>
           <Link href="/cart" className={styles.navLinkItem}>
-            <h1>Cart</h1>
+            <h3>Cart</h3>
           </Link>
           <Link href="/checkout" className={styles.navLinkItem}>
-            <h1>Profile</h1>
+            <h3>Profile</h3>
           </Link>
         </div>
       </nav>
