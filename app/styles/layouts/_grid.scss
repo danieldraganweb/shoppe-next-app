@@ -1,0 +1,10 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 120px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+//path: app\styles\layouts\_grid.scss

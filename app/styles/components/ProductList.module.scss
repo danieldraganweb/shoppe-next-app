@@ -1,0 +1,52 @@
+// @use './app/styles/base/' as *;
+// .section{
+//     width: 100%;
+//     max-height: 900px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     gap: 3em;
+//     margin-bottom: 120px;
+//     max-width: 90rem;
+//     text-align: center;
+//     box-sizing: border-box;
+//     margin: 0 auto;
+//     border : 1px solid red;
+//     position: absolute;
+    
+// }
+
+
+.gridContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    border : 1px solid red;
+
+}
+.wrapper {
+    width: 100%;
+    max-width: 78rem;
+    max-height: 1100px;
+    margin: 0 auto;
+    padding: 0  6em 0 6em;
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3em;
+    box-sizing: border-box;
+    border : 1px solid red;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 820px;
+}
