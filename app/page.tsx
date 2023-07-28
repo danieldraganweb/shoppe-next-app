@@ -1,4 +1,5 @@
-import Image from "next/image";
+// Purpose: Home page for the application
+
 import styles from "./page.module.scss";
 import { ProductList } from "./components/ProductList";
 import { BannerHero } from "./components/Banner";
@@ -9,12 +10,14 @@ export default function Home() {
     <main className={styles.main}>
       <BannerHero />
       <div className={styles.titleContainer}>
-        <h1>Shop The Latest</h1>
+        <h3>Shop The Latest</h3>
         <Link href="/products">
-          <h1>View All</h1>
+          <h5>View All</h5>
         </Link>
       </div>
       <ProductList />
     </main>
   );
 }
+
+// Path: app\page.module.scss

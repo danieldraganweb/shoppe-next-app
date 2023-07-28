@@ -6,13 +6,13 @@ import Image from "next/image";
 import styles from "../styles/components/Banner.module.scss";
 import { useMediaQuery } from "react-responsive";
 import { Record } from "../types";
-import Link from "next/link";
+import Button from "./Button";
 
 export function BannerHero() {
   const { banners } = useBanners();
   const [loading, setLoading] = useState(true);
   const isDesktopOrTablet = useMediaQuery({ minWidth: 501 });
-  const isMobile = useMediaQuery({ maxWidth: 500 });
+  // const isMobile = useMediaQuery({ maxWidth: 500 });
 
   const [imagesMobile, setBannerMobile] = useState([] as Record[]);
   const [imagesDesktop, setBannerDesktop] = useState([] as Record[]);
@@ -31,7 +31,12 @@ export function BannerHero() {
   }, [banners]);
 
   return (
-    <div>
+    <div className={styles.bannerWrapper}>
+      <div className={styles.bannerText}>
+        <h1>Plaine Gold Hoops</h1>
+        <p>$68</p>
+        <Button href="/products" text="View Product" />
+      </div>
       {isDesktopOrTablet
         ? imagesDesktop.map((banner: Record) => (
             <div key={banner.id} className={styles.imgContainer}>
@@ -40,6 +45,10 @@ export function BannerHero() {
                 alt={banner.fields?.Name}
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
+                style={{
+                  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+                  borderRadius: "0.8em",
+                }}
               />
               {/* <h3>{banner?.fields?.Name}</h3> */}
             </div>
@@ -47,12 +56,28 @@ export function BannerHero() {
         : imagesMobile.map((banner: Record) => (
             <div key={banner.id} className={styles.imgContainer}>
               <Image
+                loading="lazy"
+                layout="responsive"
                 src={banner.fields?.Image[0].url}
                 alt={banner.fields?.Name}
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
+                style={{
+                  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+                }}
+                className={` ${styles["transition-opacity"]} ${
+                  styles["opacity-0"]
+                } ${styles["transition-timing-function"]} ${
+                  styles["duration-300"]
+                } ${styles["ease-in-out"]}
+                        ${
+                          loading ? styles["opacity-0"] : styles["opacity-100"]
+                        }`}
+                onLoadingComplete={(src) =>
+                  src.classList.remove(styles["opacity-0"])
+                }
               />
-              {/* <h3>{banner?.fields?.Name}</h3> */}
+              {banner?.fields?.Name}
             </div>
           ))}
     </div>

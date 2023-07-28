@@ -41,20 +41,3 @@ $breakpoint-desktop-ultra-ultra-wide: 1920px;
     }
   }
 }
-//   @include respond-to('tablet') {
-//     background-color: darken(_variables.$primary-color, 10%);
-//   }
-  
-//   @include respond-to('desktop') {
-//     background-color: darken(_variables.$primary-color, 20%);
-//   }
-//   @include respond-to('desktop-wide') {
-//     background-color: darken(_variables.$primary-color, 30%);
-//   }
-//   @include respond-to('desktop-ultra-wide') {
-//     background-color: darken(_variables.$primary-color, 40%);
-//   }
-//   @include respond-to('desktop-ultra-ultra-wide') {
-//     background-color: darken(_variables.$primary-color, 50%);
-//   }
-// }
