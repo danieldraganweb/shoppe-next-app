@@ -5,7 +5,7 @@ $breakpoint-desktop-wide: 1280px;
 $breakpoint-desktop-ultra-wide: 1536px;
 $breakpoint-desktop-ultra-ultra-wide: 1920px;
 
-// @import '../base/_variables';
+@import '../base/_variables';
 
 @mixin respond-to($media) {
   @if $media == 'mobile' {
