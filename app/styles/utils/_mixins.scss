@@ -1,0 +1,60 @@
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-wide: 1280px;
+$breakpoint-desktop-ultra-wide: 1536px;
+$breakpoint-desktop-ultra-ultra-wide: 1920px;
+
+// @import '../base/_variables';
+
+@mixin respond-to($media) {
+  @if $media == 'mobile' {
+    @media (min-width: #{$breakpoint-mobile}) {
+      @content;
+    } 
+  }
+  
+  @else if $media == 'tablet' {
+    @media (min-width: #{$breakpoint-tablet}) {
+      @content;
+    } 
+  }
+  
+  @else if $media == 'desktop' {
+    @media (min-width: #{$breakpoint-desktop}) {
+      @content;
+    }
+  }
+  @else if $media == 'desktop-wide' {
+    @media (min-width: #{$breakpoint-desktop-wide}) {
+      @content;
+    }
+  }
+  @else if $media == 'desktop-ultra-wide' {
+    @media (min-width: #{$breakpoint-desktop-ultra-wide}) {
+      @content;
+    }
+  }
+  @else if $media == 'desktop-ultra-ultra-wide' {
+    @media (min-width: #{$breakpoint-desktop-ultra-ultra-wide}) {
+      @content;
+    }
+  }
+}
+//   @include respond-to('tablet') {
+//     background-color: darken(_variables.$primary-color, 10%);
+//   }
+  
+//   @include respond-to('desktop') {
+//     background-color: darken(_variables.$primary-color, 20%);
+//   }
+//   @include respond-to('desktop-wide') {
+//     background-color: darken(_variables.$primary-color, 30%);
+//   }
+//   @include respond-to('desktop-ultra-wide') {
+//     background-color: darken(_variables.$primary-color, 40%);
+//   }
+//   @include respond-to('desktop-ultra-ultra-wide') {
+//     background-color: darken(_variables.$primary-color, 50%);
+//   }
+// }

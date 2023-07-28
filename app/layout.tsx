@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Suspense } from "react";
 import Loading from "./loading";
-// import styles from "./globals.module.scss";
+import "./styles/globals.scss";
 
 export const metadata: Metadata = {
   title: "SHOPPE",
