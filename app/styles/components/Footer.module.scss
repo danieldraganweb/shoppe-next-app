@@ -92,7 +92,10 @@
     align-items: center;
     width: 100%;
     margin: 0 auto; 
-    margin-top: 1em;    
+    margin-top: 1em;  
+    background-color: $secondary-color;
+    padding: 1em;
+    border-radius: 0.2em;
 }
 .inputContainer{
     display: flex;
