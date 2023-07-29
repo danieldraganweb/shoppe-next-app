@@ -26,7 +26,7 @@
     align-items: center;
     font-family: $primary-font;
     font-size: 1rem;
-    padding: 0em 1em;
+    padding: 0em 0.7em;
     svg{
         position: absolute;
         top: 0.9em;
@@ -51,6 +51,7 @@
             font-size: 1em;
             outline: none;
             border: 1px solid $primary-accent-color;
+            padding-left: 2em;
         }
     }
 }
