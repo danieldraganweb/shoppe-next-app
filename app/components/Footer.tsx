@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../styles/components/Footer.module.scss";
 import SocialSVG from "./SocialSVG";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <footer className={styles.footer}>

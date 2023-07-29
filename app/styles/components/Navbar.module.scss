@@ -26,11 +26,11 @@
     align-items: center;
     font-family: $primary-font;
     font-size: 1rem;
-    padding: 0em 0.7em;
+    padding: 0em 1em;
     svg{
         position: absolute;
         top: 0.9em;
-        left: 1.7em;
+        left: 2em;
         color: $primary-accent-color;
         cursor: pointer;
         &:hover{
@@ -51,6 +51,7 @@
             font-size: 1em;
             outline: none;
             border: 1px solid $primary-accent-color;
+            box-shadow: 0 0 10px $primary-accent-color;
             padding-left: 2em;
         }
     }
