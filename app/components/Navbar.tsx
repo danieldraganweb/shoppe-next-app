@@ -10,9 +10,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <nav className={styles.nav}>
         <header className={styles.header}>
-          <h1>
-            <span className={styles.headerAccentColor}>S</span>HOPPE
-          </h1>
+          <h1>SHOPPE</h1>
         </header>
         <div className={styles.navLinks}>
           <Link href="/" className={styles.navLinkItem}>
@@ -29,17 +27,18 @@ const Navbar = () => {
           <p>|</p>
         </div>
         <div className={styles.svgContainer}>
-          <Link href="/contact" className={styles.navLinkSVG}>
+          <Link href="/contact" className={styles.navLinkSVG1}>
             <SearchSVG />
           </Link>
-          <Link href="/cart" className={styles.navLinkSVG}>
+          <Link href="/cart" className={styles.navLinkSVG2}>
             <CartSVG />
           </Link>
-          <Link href="/checkout" className={styles.navLinkSVG}>
+          <Link href="/checkout" className={styles.navLinkSVG3}>
             <ProfileSVG />
           </Link>
         </div>
       </nav>
+      <input className={styles.search} type="search" placeholder="Search..." />
     </div>
   );
 };

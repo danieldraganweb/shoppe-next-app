@@ -7,6 +7,38 @@
 
 .bannerWrapper{
   position: relative;
+  width: 100%;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 0.5em 0 0.5em; 
+  
+
+  img{
+    width: 100%;
+    max-width: 78em;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    border-radius: 0.5em;
+   
+}
+  .transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.opacity-0 {
+  opacity: 0;
+}
+
+.duration-300 {
+  transition-duration: 2500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
 }
 .bannerText{
     font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
@@ -18,7 +50,6 @@
     width: 50%;
     max-width: 50%;
     
-
     button{
         background-color: transparent;
         color: $secondary-color;
@@ -26,7 +57,7 @@
         border-radius: 5px;
         padding: 0.3em 1.5em;
         margin-top: 2.5em;
-        font-size: clamp(1.2rem, 1.5vw, 1.953rem);
+        font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
         cursor: pointer;
         &:hover{
             transform: scale(1.1);
@@ -39,19 +70,38 @@
     }
 }
 
-.transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-  .opacity-0 {
-    opacity: 0;
-  }
+
+
+
+@media screen and (max-width: 768px) {
   
-  .duration-300 {
-    transition-duration: 2500ms;
-  }
+  .bannerText{
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+    position: absolute;
+    top: 70%;
+    left: 2em;
+    transform: translateY(-50%);
+    color: $secondary-color;
+    width: 50%;
+    max-width: 50%;
   
-  .ease-in-out {
-    transition-timing-function: ease-in-out;
-  }
+    button{
+        background-color: transparent;
+        color: $secondary-color;
+        border: 2px solid $secondary-color;
+        border-radius: 5px;
+        padding: 0.3em 0.5em;
+        margin-top: 2.5em;
+        font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            color: inherit;
+        }
+        &:focus{
+            outline: none;
+        }
+
+    }
+}
+}
