@@ -77,7 +77,6 @@ export function BannerHero() {
                   src.classList.remove(styles["opacity-0"])
                 }
               />
-              {banner?.fields?.Name}
             </div>
           ))}
     </div>

@@ -1,3 +1,10 @@
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_typography' as *;
+@use './app/styles/base/_variables' as *;
+@use './app/styles/utils/_mixins';
+@use './app/styles/utils/_functions' as *;
+
 .footer{
     width: 100%;
     max-width: 78rem;
@@ -5,9 +12,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 1.5em;
     text-align: center;
     font-size: 14px;
     font-weight: 100;
@@ -21,12 +28,92 @@
         }
     }
 }
+
 .footerLinks{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    flex-basis: 50%;
+    width: 50%;
     max-width: 78rem;
     margin: 0 auto;
+}
+.footerLinksItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 78rem;
+    margin: 0 auto;
+    margin-bottom: 1em;
+
+}
+
+.footerSocial{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 30%;
+    width: 30%;
+   
+    margin: 0 auto;
+ 
+}
+.emailPlaceholder{
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    color: #000000;
+
+}
+.footerSocialItem{
+    display: flex;
+    flex-direction: row;
+}
+.footerLegal{
+    width: 100%;
+    max-width: 78rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "DM Sans", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+}
+.SVGcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+    margin: 0 auto; 
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+.footerEmailInput{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    &:focus{
+        outline: none;
+        border: 1px solid #000000;
+    }
 }
