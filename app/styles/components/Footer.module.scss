@@ -8,6 +8,7 @@
 .footer{
     width: 100%;
     max-width: 78rem;
+    height: 32em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@
     flex-basis: 60%;
     width: 60%;
     margin: 0 auto;
+    background-color: $secondary-color; 
 }
 .footerLinksItem{
     align-items: center;
@@ -193,7 +195,13 @@
 @media screen and (max-width: 500px) {
     
     .footerLinks{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 60%;
+        width: 60%;
+        margin: 0 auto;
     }
     .footerLinksItem{
         margin-bottom: 0;

@@ -9,19 +9,20 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.footerLinks}>
           <Link href="/" className={styles.footerLinksItem}>
-            <h4>Contact</h4>
-          </Link>
-          <Link href="/" className={styles.footerLinksItem}>
-            <h4>FAQ</h4>
-          </Link>
-          <Link href="/" className={styles.footerLinksItem}>
             <h4>Shipping & Returns</h4>
+          </Link>
+          <Link href="/" className={styles.footerLinksItem}>
+            <h4>Contact</h4>
           </Link>
           <Link href="/terms-of-service" className={styles.footerLinksItem}>
             <h4>Terms of Service</h4>
           </Link>
           <Link href="/" className={styles.footerLinksItem}>
             <h4>Privacy Policy</h4>
+          </Link>
+
+          <Link href="/" className={styles.footerLinksItem}>
+            <h4>FAQ</h4>
           </Link>
         </div>
         <div className={styles.footerSocial}>
