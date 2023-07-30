@@ -10,21 +10,27 @@
   width: 100%;
   max-width: 78rem;
   margin: 0 auto;
-  padding: 0 0.5em 0 0.5em; 
-  border-radius: 0.2em;
+  // background-color: aquamarine;
+  // object-position: center;
+  // object-fit: cover;
+  // height: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 1.3em;
 }
   .imgContainer{
-    border-radius: 0.2em;
+    aspect-ratio: 16/9;
+    border-radius: 0.5em;
     overflow: hidden;
+    background-attachment: fixed;
+    
     img{
-      width: 100%;
-      max-width: 78em;
+      aspect-ratio: 16/9;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
       margin: 0 auto;
-      border-radius: 0.2em;
-     
+      
   }
     .transition-opacity {
   

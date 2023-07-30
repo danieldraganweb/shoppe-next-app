@@ -46,9 +46,10 @@ export function BannerHero() {
                 alt={banner.fields?.Name}
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
+                objectFit="cover"
+                layout="responsive"
                 style={{
                   boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
-                  borderRadius: "0.2em",
                 }}
               />
             </div>
