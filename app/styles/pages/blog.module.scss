@@ -61,11 +61,10 @@ h1{
 
 .article-content {
     width: 100%;
-    margin: 0 auto;
     font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
     line-height: 1.6;
     margin-bottom: 30px;
-
+    padding: 0;
 }
 }
 /* Additional styles for the Blog page layout */
