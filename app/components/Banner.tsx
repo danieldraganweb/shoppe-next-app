@@ -63,8 +63,9 @@ export function BannerHero() {
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
                 style={{
-                  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+                  // boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                   borderRadius: "0.2em",
+                  padding: "0 0.5em 0 0.5em",
                 }}
                 className={` ${styles["transition-opacity"]} ${
                   styles["opacity-0"]

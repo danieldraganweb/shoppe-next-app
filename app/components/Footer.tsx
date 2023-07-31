@@ -34,6 +34,7 @@ const Footer: React.FC = () => {
               type="text"
               placeholder="Enter your email"
               className={styles.footerEmailInput}
+              required
             ></input>
             <div className={styles.submitBtn}>
               <svg
@@ -51,7 +52,12 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className={styles["checkbox-wrapper"]}>
-            <input id="check1-61" className={styles.check} type="checkbox" />
+            <input
+              id="check1-61"
+              className={styles.check}
+              type="checkbox"
+              required
+            />
             <label className={styles.label} htmlFor="check1-61">
               <svg viewBox="0 0 95 95" height="45" width="45">
                 <rect

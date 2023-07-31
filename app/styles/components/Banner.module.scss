@@ -10,22 +10,21 @@
   width: 100%;
   max-width: 78rem;
   margin: 0 auto;
-  // background-color: aquamarine;
-  // object-position: center;
-  // object-fit: cover;
-  // height: 100%;
-  aspect-ratio: 16/9;
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
   overflow: hidden;
-  border-radius: 1.3em;
+  margin: 0 auto;
 }
   .imgContainer{
-    aspect-ratio: 16/9;
     border-radius: 0.5em;
     overflow: hidden;
-    background-attachment: fixed;
+    margin: 0 auto;
+    
     
     img{
-      aspect-ratio: 16/9;
+      width: 100%;
+      margin: 0 auto; 
       height: 100%;
       object-fit: contain;
       object-position: center;

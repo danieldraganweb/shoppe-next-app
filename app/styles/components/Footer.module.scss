@@ -62,6 +62,18 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.footerSocialText{
+
+ p{
+    font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    color: #000000;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+ }
+}
 
 .emailPlaceholder{
     font-size: clamp(0.8rem, 1.5vw, 1.25rem);
@@ -90,7 +102,7 @@
 .SVGcontainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 auto; 
@@ -99,21 +111,21 @@
     padding: 1em;
     border-radius: 0.2em;
 }
+
 .inputContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // gap: 1em;
     align-items: center;
     width: 100%;
     margin: 0 auto; 
     box-sizing: border-box;
     margin-top: 1em;
-   
+    margin-bottom: 1em;
 }
 
 .footerEmailInput{
-    width: 100%;
+    width: 50%;
     padding: 0.5rem;
     border: 1px solid #000000;
     font-size: 0.5rem;
@@ -124,8 +136,11 @@
     
     &:focus{
         outline: none;
-        border: 1px solid #000000;
-        font-size: $font-size-small;
+        font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+        font-weight: 400;
+        svg{
+            display: none;
+        }
     }
 }
 .footerEmailInput::placeholder{
@@ -133,17 +148,14 @@
     font-weight: 400;
     color: $primary-color;
 }
-.inputContainerBtn{
-    position: relative;
-    margin-bottom: 1.5em;
 
-    svg{
-        position: absolute;
-        top: 50%;
-        right: 1em;
-        left: 80%;
-        transform: translateY(-50%);
-    }
+.inputContainerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0.5em;
 }
 .checkboxText{
     font-size: $font-size-mobile;
@@ -205,5 +217,13 @@
     }
     .footerLinksItem{
         margin-bottom: 0;
+    }
+}
+.inputContainerBtn{
+    position: relative;
+    margin-bottom: 1.5em;
+
+    &focus svg{
+       display: none;
     }
 }
