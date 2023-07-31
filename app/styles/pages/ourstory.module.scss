@@ -21,11 +21,11 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 1em;
+
     }
       h2 {
         font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
-        // font-weight: bold;
+        font-weight: bold;
         text-align: center;
         color: $primary-accent-color;
         margin-bottom: 10px;
@@ -35,13 +35,12 @@
   .our-story-title {
     font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
     font-weight: bold;
-    margin-bottom: 10px;
     color: $primary-accent-color;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
+   
   }
   
   .our-story-content {
@@ -50,11 +49,12 @@
   }
   
   .section-title {
-    font-size: clamp($font-size-mobile, 3vw, $font-size-desktop-wide);
+    font-size: clamp($font-size-mobile, 3vw, $font-size-desktop-ultra-ultra-wide);
     font-weight: bold;
     margin-bottom: 10px;
     color: $primary-accent-color;
-    margin-top: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
   
   .section-paragraph {

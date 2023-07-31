@@ -30,8 +30,9 @@ const Footer: React.FC = () => {
             Subscribe to the newsletter
           </label>
           <div className={styles.inputContainerBtn}>
+            <label htmlFor="email" className={styles.emailPlaceholder}></label>
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
               className={styles.footerEmailInput}
               required

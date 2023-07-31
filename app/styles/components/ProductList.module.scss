@@ -62,7 +62,28 @@
     transition-timing-function: ease-in-out;
   }
 
-  @media screen and (max-width: 500px) {
+
+  
+  @media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        max-width: 78rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.5em;
+        margin-bottom: 120px;
+        box-sizing: border-box;
+        margin-top: 2em;
+        padding: 0 0.5em;
+    }
+    .description{
+        font-size: $font-size-mobile;
+    }
+    
+  }
+  @media screen and (max-width: 800px) {
     .wrapper {
         width: 100%;
         max-width: 78rem;
@@ -81,4 +102,4 @@
         font-size: $font-size-mobile;
     }
     
-  }
+}

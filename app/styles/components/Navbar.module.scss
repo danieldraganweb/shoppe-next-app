@@ -5,9 +5,7 @@
 @use './app/styles/utils/_mixins';
 @use './app/styles/utils/_functions' as *;
 
-.searchBarContainer {
-    display: none;
-   }
+
    .header{
     display: flex;
     flex-direction: row;
@@ -31,7 +29,12 @@
     padding-bottom: 0.5em;
     padding-top: 0.5em;
     
-  
+    .searchBarContainer {
+      display: none;
+      .searchInput {
+          display: none;
+      }
+     }
     .burgerMenu {
       display: none;
     }
@@ -108,6 +111,7 @@
       .navLinks a:active {
         color: $primary-accent-color;
         transition: all 0.8s ease-in-out;
+        border: none;
       }
       .navLinks a:visited {
         color: $primary-color;
@@ -127,20 +131,15 @@
       }
   
   
-    @media screen and (max-width: 500px) {
-        // body{
-        //     overflow: hidden;
-        // }
-        .no-scroll {
-            overflow: hidden;
-          }
-        .navLinks
-        a{
-            font-size: 1.7rem;
-        }
-         p{
-                display: none; 
-        }
+    @media screen and (max-width: 800px) {
+
+      .navLinks
+      a{
+          font-size: 1.7rem;
+      }
+        p{
+              display: none; 
+      }
       .hamburger{
         background-color: $secondary-color;
   
@@ -231,64 +230,30 @@
         color: $primary-text-color;
         text-align: center;
       }
-      
-    }
+      .navLinks a:hover {
+        color: $secondary-color;
+        
+      }
+      .navLinks a:active {
+        color: $primary-color;
+        transition: all 0.8s ease-in-out;
+      }
+      .navLinks a:visited {
+        border-style: none;
+      }
   
-    .navLinks a:hover {
-      color: $secondary-color;
+
+
+    @media screen and (max-width: 1200px) {
+      .header {
+        width: 30%;
+        padding-left: 0em;
+      }
+      .navLinks {
+        width: 80%;
+        gap: 1.5em;
+        
+      }
       
     }
-    .navLinks a:active {
-      color: $primary-color;
-      transition: all 0.8s ease-in-out;
-    }
-    // .searchBarContainer{
-    //     width: 100%;
-    //     max-width: 500px;
-    //     margin: 0 auto;
-    //     position: relative;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     font-family: $primary-font;
-    //     font-size: 1rem;
-    //     padding: 0em 1em;
-    //     box-sizing: border-box;
-    //     svg{
-    //         position: absolute;
-    //         top: 0.9em;
-    //         left: 2em;
-    //         color: $primary-accent-color;
-    //         cursor: pointer;
-    //         &:hover{
-    //             transform: scale(1.1);
-    //         }
-    //         .searchInput {
-    //             width: 100%;
-    //             margin: 0 auto;
-    //             border-radius: 0.5em;
-    //             box-sizing: border-box;
-    //             border: 1px solid $quaternary-color;
-    //             width: 100%;
-    //             max-width: 100%;
-    //             margin: 0 auto;
-    //             background-color: $quaternary-color;
-    //             border-radius: 0.2em;
-    //             box-sizing: border-box;
-    //             border: 1px solid $quaternary-color;
-    //             margin-bottom: 1em;
-    //             padding: 0.5em 2em 0.5em 2em;
-            
-    //             &:focus {
-    //                 font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
-    //                 outline: none;
-    //                 border: 1px solid $primary-accent-color;
-    //                 padding: 0.5em 0.5em;
-    //                 outline: none;
-    //                 border: 1px solid $primary-accent-color;
-    //                 box-shadow: 0 0 10px $primary-accent-color;
-    //                 padding-left: 3em;
-    //              }
-    //         }
-    //     }
-    // }
+  }

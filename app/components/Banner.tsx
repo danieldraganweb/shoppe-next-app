@@ -41,13 +41,13 @@ export function BannerHero() {
         ? imagesDesktop.map((banner: Record) => (
             <div key={banner.id} className={styles.imgContainer}>
               <Image
-                loading="lazy"
                 src={banner.fields?.Image[0].url}
                 alt={banner.fields?.Name}
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
                 objectFit="cover"
                 layout="responsive"
+                priority={true}
                 style={{
                   boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                 }}
@@ -57,11 +57,11 @@ export function BannerHero() {
         : imagesMobile.map((banner: Record) => (
             <div key={banner.id} className={styles.imgContainer}>
               <Image
-                loading="lazy"
                 src={banner.fields?.Image[0].url}
                 alt={banner.fields?.Name}
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
+                priority={true}
                 style={{
                   // boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                   borderRadius: "0.2em",
