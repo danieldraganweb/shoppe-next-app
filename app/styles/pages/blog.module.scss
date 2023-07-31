@@ -25,7 +25,7 @@ h1{
   h2 {
     font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
     // font-weight: bold;
-    text-align: center;
+    text-align: flex-start;
     color: $primary-accent-color;
     margin-bottom: 10px;
 }

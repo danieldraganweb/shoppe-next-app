@@ -1,0 +1,40 @@
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_typography' as *;
+@use './app/styles/base/_variables' as *;
+@use './app/styles/utils/_mixins';
+@use './app/styles/utils/_functions' as *;
+
+.container {
+  width: 100%;
+  max-width: 78rem;
+  margin: 0 auto;
+  font-family: $primary-font;
+  text-align: justify;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1em;
+    box-sizing: border-box;
+
+    
+}
+.img{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; 
+    height: 100%;
+    padding: 0 1em;; 
+    object-fit: contain;
+    object-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
