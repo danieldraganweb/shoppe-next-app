@@ -1,0 +1,48 @@
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_typography' as *;
+@use './app/styles/base/_variables' as *;
+@use './app/styles/utils/_mixins';
+@use './app/styles/utils/_functions' as *;
+
+.our-story-container {
+    width: 100%;
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 0.8em;
+    left: 0;
+    font-family: $primary-font;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+  
+  .our-story-title {
+    font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $primary-accent-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  
+  .our-story-content {
+    margin-top: 80px;
+    width: 100%;
+  }
+  
+  .section-title {
+    font-size: clamp($font-size-mobile, 3vw, $font-size-desktop-wide);
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $primary-accent-color;
+    margin-top: 3em;
+  }
+  
+  .section-paragraph {
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }

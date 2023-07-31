@@ -103,12 +103,16 @@
       .navLinks a:hover {
         color: $primary-accent-color;
         transition: all 0.3s ease-in-out;
-        
       }
-      .navLinks a:active {
-        color: $primary-accent-color;
-        transition: all 0.8s ease-in-out;
-      }
+      // }
+      // .navLinks a:active {
+      //   color: $primary-accent-color;
+      //   transition: all 0.8s ease-in-out;
+      // }
+      // .navLinks a:visited {
+      //   color: $primary-color;
+      //   border: none;
+      // }
       .svgContainer{
         display: flex;
         flex-direction: row;
@@ -124,6 +128,9 @@
   
   
     @media screen and (max-width: 500px) {
+        // body{
+        //     overflow: hidden;
+        // }
         .no-scroll {
             overflow: hidden;
           }

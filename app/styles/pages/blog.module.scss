@@ -1,35 +1,77 @@
-// .container{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100vh;
-//     width: 100%;
-//     background-color: #f5f5f5;
-//     padding: 0 1rem;
-//     margin: 0 auto;
-//     max-width: 1200px;
-//     text-align: center;
-//     h1{
-//         font-size: 3rem;
-//         font-weight: 700;
-//         margin-bottom: 1rem;
-//     }
-//     p{
-//         font-size: 1.5rem;
-//         font-weight: 400;
-//         margin-bottom: 1rem;
-//     }
-//     a{
-//         font-size: 1.5rem;
-//         font-weight: 700;
-//         color: #fff;
-//         background-color: #0070f3;
-//         padding: 0.5rem 1rem;
-//         border-radius: 5px;
-//         transition: all 0.2s ease-in-out;
-//         &:hover{
-//             background-color: #0060d3;
-//         }
-//     }
-// }
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_typography' as *;
+@use './app/styles/base/_variables' as *;
+@use './app/styles/utils/_mixins';
+@use './app/styles/utils/_functions' as *;
+
+.blog-container {
+  width: 100%;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: $primary-font;
+  text-align: justify;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.article {
+  margin-bottom: 40px;
+}
+
+.article-title {
+  font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: $primary-accent-color;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3em;
+  width: 100%;
+    max-width: 78rem;
+}
+
+.article-date {
+  font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+  color: $primary-accent-color;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.article-content {
+    width: 100%;
+    margin: 0 auto;
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Additional styles for the Blog page layout */
+.h1 {
+  font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
+  font-weight: bold;
+  text-align: center;
+  color: $primary-accent-color;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-container {
+    padding: 0 1em 0 1em;
+  }
+  .article-title {
+    justify-content: center;
+  }
+    .article-content {
+        padding: 0 1em 0 1em;
+    }
+}
+    
