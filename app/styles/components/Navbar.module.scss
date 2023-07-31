@@ -14,6 +14,25 @@
     flex-basis: 15%;
     position: relative;
     font-family: $secondary-font;   
+ 
+    a {
+      text-decoration: none;
+      color: $primary-text-color;
+      text-align: center;
+    }
+    .header a:hover {
+      color: $primary-accent-color;
+      
+    }
+    .header a:active {
+      color: $primary-color;
+      transition: all 0.8s ease-in-out;
+      border-style: none;
+    }
+    .header a:visited {
+      border-style: none;
+      background-color: aquamarine;
+    }
 }
 .navbar {
     background-color: $secondary-color;
@@ -95,28 +114,8 @@
           list-style: none;
         }
       }
-  
-      a {
-        text-decoration: none;
-        color: $primary-color;
-        margin: 0 auto;
-        display: flex;
-      }
     }
-      .navLinks a:hover {
-        color: $primary-accent-color;
-        transition: all 0.3s ease-in-out;
-      
-      }
-      .navLinks a:active {
-        color: $primary-accent-color;
-        transition: all 0.8s ease-in-out;
-        border: none;
-      }
-      .navLinks a:visited {
-        color: $primary-color;
-        border: none;
-      }
+  
       .svgContainer{
         display: flex;
         flex-direction: row;
@@ -231,15 +230,17 @@
         text-align: center;
       }
       .navLinks a:hover {
-        color: $secondary-color;
+        color: $primary-accent-color;
         
       }
       .navLinks a:active {
         color: $primary-color;
         transition: all 0.8s ease-in-out;
+        border-style: none;
       }
       .navLinks a:visited {
         border-style: none;
+        background-color: aquamarine;
       }
   
 

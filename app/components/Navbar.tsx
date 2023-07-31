@@ -5,8 +5,10 @@ import styles from "../styles/components/Navbar.module.scss";
 import CartSVG from "./CartSVG";
 import SearchSVG from "./SearchSVG";
 import ProfileSVG from "./ProfileSVG";
+import { UrlObject } from "url";
 
 const Navbar: React.FC = () => {
+  const url: UrlObject = { pathname: "/" };
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const toggleMenu = () => {
@@ -24,7 +26,9 @@ const Navbar: React.FC = () => {
         <main className={styles.main}>
           <nav className={styles.navbar}>
             <header className={styles.header}>
-              <h1>SHOPPE</h1>
+              <Link href={url}>
+                <h1>SHOPPE</h1>
+              </Link>
             </header>
             <div className={styles.burgerMenuContainer}>
               <div className={styles.burgerMenu}>
@@ -75,8 +79,8 @@ const Navbar: React.FC = () => {
             >
               <li className={styles.navLinkItem}>
                 <Link
-                  key=""
-                  href="/"
+                  key="shop"
+                  href="/shop"
                   className={styles.navLinkItem}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -85,7 +89,7 @@ const Navbar: React.FC = () => {
               </li>
               <li className={styles.navLinkItem}>
                 <Link
-                  key=""
+                  key="blog"
                   href="/blog"
                   className={styles.navLinkItem}
                   onClick={() => setMenuOpen(false)}
@@ -95,7 +99,7 @@ const Navbar: React.FC = () => {
               </li>
               <li className={styles.navLinkItem}>
                 <Link
-                  key=""
+                  key="ourstory"
                   href="/ourstory"
                   className={styles.navLinkItem}
                   onClick={() => setMenuOpen(false)}
@@ -111,8 +115,8 @@ const Navbar: React.FC = () => {
               <div className={styles.svgContainer}>
                 <li>
                   <Link
-                    key=""
-                    href="/contact"
+                    key="search"
+                    href="/search"
                     className={styles.navLinkSVG1}
                     onClick={() => setMenuOpen(false)}
                   >
@@ -121,7 +125,7 @@ const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    key=""
+                    key="cart"
                     href="/cart"
                     className={styles.navLinkSVG2}
                     onClick={() => setMenuOpen(false)}
