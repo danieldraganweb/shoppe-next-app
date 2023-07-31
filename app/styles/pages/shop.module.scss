@@ -11,7 +11,6 @@
   margin: 0 auto;
   font-family: $primary-font;
   text-align: justify;
-  padding: 1em;
   box-sizing: border-box;
   display: flex;
     flex-direction: column;
@@ -20,15 +19,15 @@
     margin: 0 auto;
     padding: 0 1em;
     box-sizing: border-box;
-
+    border-radius: 0.2em;
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop-ultra-ultra-wide);
     
 }
-.img{
+.img-container{
     width: 100%;
-    max-width: 100%;
+    max-width: 78rem;
     margin: 0 auto; 
-    height: 100%;
-    padding: 0 1em;; 
+    padding: 0 0.5em;; 
     object-fit: contain;
     object-position: center;
     display: flex;
@@ -36,5 +35,20 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    border-radius: 0.2em;
 
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 1em;
+       
+    }
+    .img-container{
+       
+        padding: 0 0.5em;; 
+    
+    }
+}
+    
