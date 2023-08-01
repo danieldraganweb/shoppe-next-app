@@ -17,7 +17,7 @@
     h1{
       color: $primary-accent-color;
       font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
-      font-weight: bold;
+      // font-weight: bold;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,8 +33,8 @@
   
   
   .our-story-title {
-    font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
-    font-weight: bold;
+    font-size: clamp($font-size-tablet, 5vw, $font-size-desktop-ultra-ultra-wide);
+    // font-weight: bold;
     color: $primary-accent-color;
     margin: 0 auto;
     display: flex;
@@ -49,12 +49,13 @@
   }
   
   .section-title {
-    font-size: clamp($font-size-mobile, 3vw, $font-size-desktop-ultra-ultra-wide);
-    font-weight: bold;
+    font-size: clamp($font-size-desktop, 3vw, $font-size-desktop-ultra-ultra-wide);
+    // font-weight: bold;
     margin-bottom: 10px;
     color: $primary-accent-color;
     margin-top: 2em;
     margin-bottom: 1em;
+    text-align: center;
   }
   
   .section-paragraph {

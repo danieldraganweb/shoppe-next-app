@@ -19,7 +19,7 @@
   h1{
     color: $primary-accent-color;
     font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
-    font-weight: bold;
+    // font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
 h1{
     color: $primary-accent-color;
     font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
-    font-weight: bold;
+    // font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;

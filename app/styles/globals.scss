@@ -49,12 +49,13 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    transform: scale(1.1);
   }
 
-  &:focus {
-    outline: 2px solid $primary-color;
-  }
+  // &:focus {
+  //   outline: 2px solid $primary-accent-color;
+  // }
 }
 
 ul {
