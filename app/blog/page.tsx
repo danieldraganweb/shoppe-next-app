@@ -37,6 +37,7 @@ const Blog = () => {
             } ${styles["ease-in-out"]}
                     ${loading ? styles["opacity-0"] : styles["opacity-100"]}`}
           />
+
           <p className={styles["article-content"]}>
             {post.fields?.["blog-content"]}
           </p>
