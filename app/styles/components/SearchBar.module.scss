@@ -6,6 +6,7 @@
 @use './app/styles/utils/_functions' as *;
 
 .searchBarContainer {
+    margin: 0 auto;
     font-family: $primary-font;
     display: none;
     .searchInput {
@@ -36,9 +37,8 @@
             outline: none;
             background-color: $quaternary-color;
             border-radius: 5px;
-            // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             font-size: 1.2rem;
-            font-weight: 500;
+            font-weight: 300;
             color: $primary-color;
             padding: 0 1rem;
             &::placeholder {

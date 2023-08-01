@@ -39,7 +39,7 @@
   .bannerText{
     font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
     position: absolute;
-    top: 70%;
+    top: 40%;
     left: 2em;
     transform: translateY(-50%);
     color: $secondary-color;
@@ -66,62 +66,35 @@
     }
 }
 }
+@media screen and (max-width: 500px) {
   
+  .bannerText{
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+    position: absolute;
+    top: 70%;
+    left: 2em;
+    transform: translateY(-50%);
+    color: $secondary-color;
+    width: 35%;
+    max-width: 35%;
+  
+    button{
+        background-color: transparent;
+        color: $secondary-color;
+        border: 2px solid $secondary-color;
+        border-radius: 5px;
+        padding: 0.3em 0.5em;
+        margin-top: 1em;
+        font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            color: inherit;
+        }
+        &:focus{
+            outline: none;
+        }
 
-// .bannerText{
-//     h1{
-//       font-size: clamp($font-size-desktop, 1.5vw, $font-size-desktop);
-//       position: absolute;
-//       top: 35%;
-//       left: 2em;
-//       transform: translateY(-50%);
-//       color: $primary-color;
-//       width: 50%;
-//       max-width: 50%;
-//     }
-//     button{
-//       background-color: aquamarine;
-//       color: $secondary-color;
-//       border: 2px solid $secondary-color;
-//       border-radius: 0.2em;
-//       padding: 0.3em 1.5em;
-//       margin-top: 2.5em;
-//       font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
-//       cursor: pointer;
-//       &:hover{
-//           transform: scale(1.1);
-//           color: inherit;
-//       }
-//       &:focus{
-//           outline: none;
-//       }
-//     }
-//   }
-  
-//   h1{
-//     font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
-//     position: absolute;
-//     top: 70%;
-//     left: 2em;
-//     transform: translateY(-50%);
-//     color: $secondary-color;
-//     width: 50%;
-//     max-width: 50%;
-//   }
-//   button{
-//     background-color: transparent;
-//     color: $secondary-color;
-//     border: 2px solid $secondary-color;
-//     border-radius: 5px;
-//     padding: 0.3em 0.5em;
-//     margin-top: 2.5em;
-//     font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
-//     cursor: pointer;
-//     &:hover{
-//         transform: scale(1.1);
-//         color: inherit;
-//     }
-//     &:focus{
-//         outline: none;
-//     }
-//   }
+    }
+}
+}
