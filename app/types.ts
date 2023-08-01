@@ -1,6 +1,7 @@
 export type Record = {
     id: string;
-    fields: {
+  fields: {
+      createdTime: string;
       Price: string;
       Name: string;
       Description: string;
