@@ -8,6 +8,7 @@ import { useState } from "react";
 export function ProductList() {
   const { products } = useProducts();
   const [loading, setLoading] = useState(true);
+
   return (
     <div className={styles.wrapper}>
       {products.map((product) => (
