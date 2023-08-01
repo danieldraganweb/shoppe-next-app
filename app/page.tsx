@@ -2,13 +2,13 @@
 
 import styles from "./page.module.scss";
 import { ProductList } from "./components/ProductList";
-import { BannerHero } from "./components/Banner";
+import { Banner } from "./components/Banner";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <BannerHero />
+      <Banner />
       <div className={styles.titleContainer}>
         <h3>Shop The Latest</h3>
         <Link href="/products">

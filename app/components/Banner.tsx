@@ -6,9 +6,9 @@ import Image from "next/legacy/image";
 import styles from "../styles/components/Banner.module.scss";
 import { useMediaQuery } from "react-responsive";
 import { Record } from "../types";
-import Button from "./Button";
+import BannerHero from "./BannerHero";
 
-export function BannerHero() {
+export function Banner() {
   const { banners } = useBanners();
   const [loading, setLoading] = useState(true);
   const isDesktopOrTablet = useMediaQuery({ minWidth: 501 });
@@ -32,11 +32,6 @@ export function BannerHero() {
 
   return (
     <div className={styles.bannerWrapper}>
-      <div className={styles.bannerText}>
-        <h1>Plaine Gold Hoops</h1>
-        <p>$68</p>
-        <Button href="/products" text="View Product" />
-      </div>
       {isDesktopOrTablet
         ? imagesDesktop.map((banner: Record) => (
             <div key={banner.id} className={styles.imgContainer}>
@@ -45,8 +40,7 @@ export function BannerHero() {
                 alt={banner.fields?.Name}
                 width={banner.fields?.Image[0].width}
                 height={banner.fields?.Image[0].height}
-                objectFit="cover"
-                layout="responsive"
+                // layout="responsive"
                 priority={true}
                 style={{
                   boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
@@ -63,15 +57,15 @@ export function BannerHero() {
                 height={banner.fields?.Image[0].height}
                 priority={true}
                 layout="responsive"
-                objectFit="cover"
                 style={{
-                  // boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+                  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                   borderRadius: "0.2em",
                   padding: "0 0.5em 0 0.5em",
                 }}
               />
             </div>
           ))}
+      <BannerHero />
     </div>
   );
 }
