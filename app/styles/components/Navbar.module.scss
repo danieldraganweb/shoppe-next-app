@@ -127,6 +127,9 @@
   
   
     @media screen and (max-width: 800px) {
+      .svgContainer{
+        display: none;
+      }
       .mobile-cart{
         display: flex;
         flex-direction: row;
@@ -262,10 +265,8 @@
         border-style: none;
         background-color: aquamarine;
       }
-      .svgContainer{
-        display: none;
-      }
-
+     
+    }
 
     @media screen and (max-width: 1200px) {
       .header {
@@ -279,4 +280,4 @@
       }
       
     }
-  }
+  
