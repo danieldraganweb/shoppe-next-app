@@ -31,7 +31,11 @@ const Navbar: React.FC = () => {
                 <h1>SHOPPE</h1>
               </Link>
             </header>
+
             <div className={styles.burgerMenuContainer}>
+              <div className={styles["mobile-cart"]}>
+                <CartSVG />
+              </div>
               <div className={styles.burgerMenu}>
                 <button
                   className={styles.burgerMenuButton}
