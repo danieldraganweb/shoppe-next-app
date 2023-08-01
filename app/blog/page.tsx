@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import styles from "../styles/pages/blog.module.scss";
-import { useState } from "react";
 import { useBlogPosts } from "../hooks/useBlogPosts";
 import Image from "next/legacy/image";
 import { BlogPostRecord } from "../../app/types";

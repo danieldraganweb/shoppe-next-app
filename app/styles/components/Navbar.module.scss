@@ -6,6 +6,21 @@
 @use './app/styles/utils/_functions' as *;
 
 
+.navbar {
+    background-color: $secondary-color;
+    font-family: $primary-font;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 78rem;   
+    flex-basis: 100%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    
+    
    .header{
     display: flex;
     flex-direction: row;
@@ -29,29 +44,9 @@
     }
     .header a:visited {
       border-style: none;
-      background-color: aquamarine;
     }
 }
-.navbar {
-    background-color: $secondary-color;
-    font-family: $primary-font;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 78rem;   
-    flex-basis: 100%;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    
-    .searchBarContainer {
-      display: none;
-      .searchInput {
-          display: none;
-      }
-     }
+   
     .burgerMenu {
       display: none;
     }
