@@ -17,22 +17,20 @@
  
     a {
       text-decoration: none;
-      color: $primary-text-color;
-      text-align: center;
     }
-    // .header a:hover {
-    //   color: $primary-accent-color;
+    .header a:hover {
+      color: $primary-accent-color;
       
-    // }
-    // .header a:active {
-    //   color: $primary-color;
-    //   transition: all 0.8s ease-in-out;
-    //   border-style: none;
-    // }
-    // .header a:visited {
-    //   border-style: none;
-    //   background-color: aquamarine;
-    // }
+    }
+    .header a:active {
+      color: $primary-color;
+      transition: all 0.8s ease-in-out;
+      border-style: none;
+    }
+    .header a:visited {
+      border-style: none;
+      background-color: aquamarine;
+    }
 }
 .navbar {
     background-color: $secondary-color;

@@ -57,25 +57,25 @@ h1{
   max-height: 400px;
   object-fit: cover;
   margin-bottom: 20px;
-  .transition-opacity {
   
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-  .opacity-0 {
-    opacity: 0;
-  }
+}
+.transition-opacity {
   
-  .duration-300 {
-    transition-duration: 2500ms;
-  }
-  
-  .ease-in-out {
-    transition-timing-function: ease-in-out;
-  }
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.opacity-0 {
+  opacity: 0;
 }
 
+.duration-300 {
+  transition-duration: 2500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
 .article-content {
     width: 100%;
     font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
