@@ -4,28 +4,25 @@ import styles from "../styles/pages/blog.module.scss";
 import { useState } from "react";
 import { useBlogPosts } from "../hooks/useBlogPosts";
 import Image from "next/legacy/image";
+import { BlogPostRecord } from "../../app/types";
 
 const Blog = () => {
   const { blogPosts } = useBlogPosts();
   const [loading, setLoading] = useState(true);
   console.log(blogPosts);
-
   return (
     <div className={styles["blog-container"]}>
-      {blogPosts.map((blogPost) => (
-        <div key={blogPost.id} className={styles.article}>
-          <h2 className={styles["article-title"]}>{blogPost.fields?.Name}</h2>
+      <h1>Blog</h1>
+      {blogPosts.map((post: BlogPostRecord) => (
+        <div key={post.id} className={styles.article}>
+          <h2 className={styles["article-title"]}>{post.fields?.name}</h2>
           <p className={styles["article-date"]}>
-            Published on {blogPost.fields?.createdTime}
+            Published on {post.fields?.date}
           </p>
           <Image
             loading="lazy"
-            src={
-              blogPost.fields?.Image && blogPost.fields.Image.length > 0
-                ? blogPost.fields.Image[0].url
-                : ""
-            }
-            alt={blogPost.fields?.Name}
+            src={post.fields?.image[0].url}
+            alt={post.fields?.name}
             width={370}
             height={370}
             layout="responsive"
@@ -39,21 +36,17 @@ const Blog = () => {
               styles["duration-300"]
             } ${styles["ease-in-out"]}
                     ${loading ? styles["opacity-0"] : styles["opacity-100"]}`}
-            onLoadingComplete={(src) =>
-              src.classList.remove(styles["opacity-0"])
-            }
+            
           />
           <p className={styles["article-content"]}>
-            {blogPost.fields?.Description}
+            {post.fields?.["blog-content"]}
           </p>
         </div>
       ))}
     </div>
   );
 };
-
 export default Blog;
-
 // const Blog = () => {
 //   return (
 //     <div className={styles["blog-container"]}>

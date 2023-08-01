@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useProducts } from "../hooks/useProducts";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from "../styles/components/ProductList.module.scss";
 import { useState } from "react";
 
