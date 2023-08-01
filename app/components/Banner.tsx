@@ -63,19 +63,12 @@ export function BannerHero() {
                 height={banner.fields?.Image[0].height}
                 priority={true}
                 layout="responsive"
+                objectFit="cover"
                 style={{
                   // boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                   borderRadius: "0.2em",
                   padding: "0 0.5em 0 0.5em",
                 }}
-                // className={` ${styles["transition-opacity"]} ${
-                //   styles["opacity-0"]
-                // } ${styles["transition-timing-function"]} ${
-                //   styles["duration-300"]
-                // } ${styles["ease-in-out"]}
-                //         ${
-                //           loading ? styles["opacity-0"] : styles["opacity-100"]
-                //         }`}
               />
             </div>
           ))}
