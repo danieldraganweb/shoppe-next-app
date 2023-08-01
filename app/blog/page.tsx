@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../styles/pages/blog.module.scss";
 import { useState } from "react";
 import { useBlogPosts } from "../hooks/useBlogPosts";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Blog = () => {
   const { blogPosts } = useBlogPosts();

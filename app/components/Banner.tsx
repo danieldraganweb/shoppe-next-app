@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useBanners } from "../hooks/useBanner";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../styles/components/Banner.module.scss";
 import { useMediaQuery } from "react-responsive";
 import { Record } from "../types";

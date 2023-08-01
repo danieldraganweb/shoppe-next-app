@@ -1,6 +1,6 @@
 import styles from "../styles/pages/shop.module.scss";
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 const Shop = () => {
   return (
     <>

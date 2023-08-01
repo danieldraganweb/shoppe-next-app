@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/pages/ourstory.module.scss";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const OurStory = () => {
   return (
