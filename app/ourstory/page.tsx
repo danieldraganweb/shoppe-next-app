@@ -8,18 +8,18 @@ const OurStory = () => {
       {/* <h1 className={styles["our-story-title"]}>SHOPPE</h1> */}
       <h1 className={styles["our-story-title"]}>Our Story</h1>
       <div className={styles["our-story-content"]}>
-        <h2 className={styles["section-title"]}>
+        <h1 className={styles["section-title"]}>
           Crafting Magic, One Piece at a Time
-        </h2>
+        </h1>
         <p className={styles["section-paragraph"]}>
           Our journey began with a simple dream - to create an online haven for
           jewelry enthusiasts, a place where the allure of craftsmanship meets
           the brilliance of design. Today, we stand proudly as a haven for
           elegance, sophistication, and timeless beauty.
         </p>
-        <h2 className={styles["section-title"]}>
+        <h1 className={styles["section-title"]}>
           Celebrating Diversity, Embracing Individuality
-        </h2>
+        </h1>
         <p className={styles["section-paragraph"]}>
           At Shoppe, we understand that beauty comes in all shapes, sizes, and
           forms. Our extensive range of jewelry celebrates diversity, offering a
@@ -28,9 +28,9 @@ const OurStory = () => {
           or a subtle charm that whispers elegance, our collection is a
           testament to the vastness of beauty that surrounds us.
         </p>
-        <h2 className={styles["section-title"]}>
+        <h1 className={styles["section-title"]}>
           Ethically Sourced, Forever Cherished
-        </h2>
+        </h1>
         <p className={styles["section-paragraph"]}>
           With a deep reverence for our planet and its resources, we are
           committed to sourcing our materials ethically and responsibly. Our
@@ -39,9 +39,9 @@ const OurStory = () => {
           in creating treasures that not only shine on the outside but also
           carry the glow of a clear conscience.
         </p>
-        <h2 className={styles["section-title"]}>
+        <h1 className={styles["section-title"]}>
           Embracing Moments, Creating Memories
-        </h2>
+        </h1>
         <p className={styles["section-paragraph"]}>
           Jewelry is more than mere adornment; it&rsquo;s an expression of
           emotions, a reflection of cherished memories. We feel privileged to be
@@ -51,7 +51,7 @@ const OurStory = () => {
           story - each design etching a beautiful memory in the tapestry of your
           life.
         </p>
-        <h2 className={styles["section-title"]}>Our Promise to You</h2>
+        <h1 className={styles["section-title"]}>Our Promise to You</h1>
         <p className={styles["section-paragraph"]}>
           As you explore Shoppe, we want you to experience the joy of
           discovering a treasure trove filled with stories waiting to be shared.
@@ -61,9 +61,9 @@ const OurStory = () => {
           passion for exquisite jewelry is a promise that you can cherish for a
           lifetime.
         </p>
-        <h2 className={styles["section-title"]}>
+        <h1 className={styles["section-title"]}>
           Thank You for Being Part of Our Story
-        </h2>
+        </h1>
         <p className={styles["section-paragraph"]}>
           Our journey at Shoppe continues to flourish, inspired by the support
           and love of our cherished customers. Together, we are creating a

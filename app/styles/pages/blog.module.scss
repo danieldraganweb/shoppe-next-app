@@ -4,6 +4,35 @@
 @use './app/styles/utils/_mixins';
 @use './app/styles/utils/_functions' as *;
 
+.blog-page{
+  width: 100%;
+  max-width: 78rem;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  // border: 2px solid $primary-accent-color;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  
+  h1{
+    color: $primary-accent-color;
+    font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+  }
+  p{
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-tablet);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0.5em;
+    color: $primary-color;
+  }
+}
 .blog-container {
   width: 100%;
   max-width: 78rem;
@@ -12,10 +41,18 @@
   text-align: justify;
   padding: 1em;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0.8em;
+  left: 0;
+  // margin: 2px solid $primary-accent-color;
 
 h1{
     color: $primary-accent-color;
-    font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
+    font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -23,7 +60,7 @@ h1{
     margin-bottom: 1em;
 }
   h2 {
-    font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
+    font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
     // font-weight: bold;
     text-align: flex-start;
     color: $primary-accent-color;
@@ -32,6 +69,12 @@ h1{
 
 .article {
   margin-bottom: 10px;
+  width: 100%;
+  border: 2px solid $primary-accent-color;
+  border-radius: 0.9rem;
+  margin-bottom: 2em;
+  
+
 }
 
 .article-title {
@@ -39,17 +82,18 @@ h1{
     font-weight: bold;
     margin-bottom: 10px;
     color: $primary-accent-color;
-    // margin: 0 auto;
     text-align: flex-start;
     margin-bottom: 1em;
     width: 100%;
     max-width: 78rem;
+    padding: 0.5em;
 }
 
 .article-date {
-  font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+  font-size: clamp($font-size-mobile, 1.5vw, $font-size-tablet);
   color: $primary-accent-color;
   margin-bottom: 20px;
+  padding: 0.5em;
 }
 
 .article-image {
@@ -57,31 +101,16 @@ h1{
   max-height: 400px;
   object-fit: cover;
   margin-bottom: 20px;
+  padding: 0;
   
 }
-.transition-opacity {
-  
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-.opacity-0 {
-  opacity: 0;
-}
 
-.duration-300 {
-  transition-duration: 2500ms;
-}
-
-.ease-in-out {
-  transition-timing-function: ease-in-out;
-}
 .article-content {
     width: 100%;
-    font-size: clamp($font-size-mobile, 1.5vw, $font-size-desktop);
+    font-size: clamp($font-size-mobile, 1.5vw, $font-size-tablet);
     line-height: 1.6;
     margin-bottom: 30px;
-    padding: 0;
+    padding: 0.5em;
 }
 }
 /* Additional styles for the Blog page layout */

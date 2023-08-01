@@ -15,21 +15,21 @@
     text-align: justify;
     box-sizing: border-box;
     h1{
-        color: $primary-accent-color;
-        font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
-        font-weight: bold;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-    }
-      h2 {
-        font-size: clamp($font-size-mobile, 5vw, $font-size-desktop-ultra-ultra-wide);
-        font-weight: bold;
-        text-align: center;
-        color: $primary-accent-color;
-        margin-bottom: 10px;
-    }
+      color: $primary-accent-color;
+      font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+  }
+    h2 {
+      font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
+      // font-weight: bold;
+      text-align: center;
+      color: $primary-accent-color;
+      margin-bottom: 10px;
+  }
   
   
   .our-story-title {
