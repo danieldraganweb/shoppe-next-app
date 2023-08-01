@@ -75,9 +75,6 @@ export function BannerHero() {
                         ${
                           loading ? styles["opacity-0"] : styles["opacity-100"]
                         }`}
-                onLoadingComplete={(src) =>
-                  src.classList.remove(styles["opacity-0"])
-                }
               />
             </div>
           ))}
