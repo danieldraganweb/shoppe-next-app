@@ -15,11 +15,11 @@
   // border: 2px solid $primary-accent-color;
   box-sizing: border-box;
   font-family: $primary-font;
+  padding: 1em;
   
   h1{
     color: $primary-accent-color;
     font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
-    // font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,21 +39,17 @@
   margin: 0 auto;
   font-family: $primary-font;
   text-align: justify;
-  padding: 1em;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  align-items: flex-start;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
-  padding: 0.8em;
-  left: 0;
-  // margin: 2px solid $primary-accent-color;
+  margin: 2px solid $primary-accent-color;
 
 h1{
     color: $primary-accent-color;
     font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
-    // font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,20 +57,22 @@ h1{
 }
   h2 {
     font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-ultra-wide);
-    // font-weight: bold;
     text-align: flex-start;
     color: $primary-accent-color;
     margin-bottom: 10px;
 }
 
 .article {
-  margin-bottom: 10px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-basis: 48.5%;
   border: 2px solid $primary-accent-color;
   border-radius: 0.9rem;
-  margin-bottom: 2em;
-  
-
+  margin-bottom: 1em;
 }
 
 .article-title {
@@ -98,33 +96,36 @@ h1{
 
 .article-image {
   width: 100%;
-  max-height: 400px;
   object-fit: cover;
   margin-bottom: 20px;
   padding: 0;
-  
 }
 
 .article-content {
     width: 100%;
     font-size: clamp($font-size-mobile, 1.5vw, $font-size-tablet);
-    line-height: 1.6;
+    // line-height: 1.6;
     margin-bottom: 30px;
     padding: 0.5em;
 }
+
 }
-/* Additional styles for the Blog page layout */
 
-
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 758px) {
+  .blog-page{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+  }
   .blog-container {
-    padding: 1em;
-  }
-  .article-title {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
   }
-    .article-content {
-        padding: 0 1em 0 1em;
-    }
+  .article {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
