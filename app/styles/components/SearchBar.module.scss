@@ -20,15 +20,14 @@
 
 @media screen and (max-width: 500px) {
     .searchBarWrapper{
-        // background-color: aquamarine;
+        background-color: aquamarine;
         margin: 0 auto;
         width: 100%;
-        max-width: 450px;
+        max-width: 400px;
         display: block;
         padding: 0 0.5em;
         box-sizing: border-box;
-        // margin-left: 0.5em;
-        // margin-right: 0.5em;
+        overflow: hidden;
     }
     .searchBarContainer {
         box-sizing: border-box;
