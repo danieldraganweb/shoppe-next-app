@@ -18,7 +18,7 @@
     .searchBarWrapper{
         margin: 0 auto;
         width: 100%;
-        max-width: 400px;
+        max-width: 390px;
         display: block;
         padding: 0.5em 0.5em;
         box-sizing: border-box;
@@ -56,10 +56,10 @@
             }
         }
     }
-//     @media screen and (max-width: 350px) {
-//         .searchBarContainer{
-//             width: 100%;
-//             max-width: 300px;
-//         } 
-// }
+    @media screen and (max-width: 350px) {
+        .searchBarContainer{
+            width: 100%;
+            max-width: 350px;
+        } 
+}
 }
