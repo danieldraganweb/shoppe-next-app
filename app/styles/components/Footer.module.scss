@@ -14,7 +14,7 @@
     justify-content: center;
     background-color: $secondary-color;
     color: $primary-color;
-    padding: 1.5em;
+    // padding: 1.5em;
     text-align: center;
     font-size: clamp(0.8rem, 1.5vw, 1.25rem);
     font-weight: 100;
@@ -39,12 +39,13 @@
     align-items: center;
     flex-basis: 60%;
     width: 60%;
+    max-width: 78em;
     margin: 0 auto;
     background-color: $secondary-color; 
 }
 .footerLinksItem{
     align-items: center;
-    max-width: 78rem;
+    max-width: 78em;
     margin: 0 auto;
     margin-bottom: 1em;
 
