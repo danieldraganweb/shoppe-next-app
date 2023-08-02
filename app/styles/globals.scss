@@ -16,6 +16,8 @@
 }
 
 body {
+  width: 100%;
+  max-width: 78em;
   font-size: 1.6rem; // This sets the base font-size to be 16px
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +25,7 @@ body {
    background-color: $secondary-color;
    color: $primary-color;
    margin: 0 auto;
+   border: 2px solid $primary-color;
 }
 
 *, *::before, *::after {
