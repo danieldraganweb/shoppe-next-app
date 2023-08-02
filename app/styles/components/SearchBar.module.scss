@@ -9,21 +9,25 @@
     margin: 0 auto;
     font-family: $primary-font;
     display: none;
+    padding: 0.5rem;
+    box-sizing: border-box;
     .searchInput {
         display: none;
     }
    }
+  
 
 @media screen and (max-width: 500px) {
     .searchBarContainer {
+        box-sizing: border-box;
+        padding: 0.5rem;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        max-width: 400px;
-        padding: 0.5rem;
+        max-width: 470px;
+        width: 94%;
         height: auto;
         background-color: $quaternary-color;
         border-radius: 5px;
@@ -48,5 +52,10 @@
             }
         }
     }
+    @media screen and (max-width: 350px) {
+        .searchBarContainer{
+            width: 100%;
+            max-width: 314px;
+        } 
 }
-    
+}
