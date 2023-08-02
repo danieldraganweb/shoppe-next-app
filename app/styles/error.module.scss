@@ -1,0 +1,54 @@
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_reset' as *;
+@use './app/styles/base/_typography' as *;
+@use './app/styles/base/_variables' as *;
+@use './app/styles/utils/_mixins';
+@use './app/styles/utils/_functions' as *;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    max-width: 78em;
+    margin: 0 auto;
+    // border: 1px solid #eaeaea;
+    font-family: $primary-font; 
+    box-sizing: border-box;
+    padding: 10em;
+    border-radius: 0.2em;
+
+    h1{
+        font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-wide);
+        margin-bottom: 0.5em;
+    }
+    h2{
+        font-size: clamp($font-size-desktop, 5vw, $font-size-desktop-ultra-wide);
+        margin-bottom: 1em;
+    }
+    p{
+        font-size: clamp($font-size-tablet, 5vw, $font-size-desktop);
+        font-weight: 100;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    button{
+        width: 100%;
+        max-width: 10em;
+        font-size: clamp($font-size-tablet, 5vw, $font-size-desktop);
+        margin-bottom: 1em;
+        text-align: center;
+        padding: 0.7em 2em;
+        border-radius: 0.5em;
+        border: 1px solid #eaeaea;
+        background-color: $secondary-color;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

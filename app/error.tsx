@@ -17,8 +17,13 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <div className={styles.wrapper}>
+      <h1>404 ERROR</h1>
       <h2>Something went wrong!</h2>
+      <p>
+        The page you are looking for could not be found. Please check the URL or
+        navigate back to the homepage.
+      </p>
       <button
         onClick={
           // Attempt to recover by trying to re-render the segment
@@ -28,7 +33,9 @@ export default function Error({
         Try again
       </button>
       <button>
-        <Link key="home" href="/" className={styles.navLinkItem}></Link>
+        <Link key="home" href="/" className={styles.navLinkItem}>
+          Homepage
+        </Link>
       </button>
     </div>
   );
