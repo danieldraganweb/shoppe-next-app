@@ -4,13 +4,15 @@ import SearchSVG from "./SearchSVG";
 
 const SearchBar = () => {
   return (
-    <div className={styles.searchBarContainer}>
-      <SearchSVG />
-      <input
-        className={styles.searchInput}
-        type="search"
-        placeholder="Search"
-      />
+    <div className={styles.searchBarWrapper}>
+      <div className={styles.searchBarContainer}>
+        <SearchSVG />
+        <input
+          className={styles.searchInput}
+          type="search"
+          placeholder="Search"
+        />
+      </div>
     </div>
   );
 };

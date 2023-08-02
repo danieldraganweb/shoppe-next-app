@@ -151,6 +151,8 @@ const Navbar: React.FC = () => {
             </ul>
           </nav>
         </main>
+      </div>
+      <div>
         <SearchBar />
       </div>
     </>
