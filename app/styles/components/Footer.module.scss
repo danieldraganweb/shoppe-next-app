@@ -211,20 +211,17 @@
 @media screen and (max-width: 500px) {
     
     .footerLinks{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-basis: 60%;
-        width: 60%;
+        display: inline-block;
+        flex-basis: 100%;
+        width: 100%;
         margin: 0 auto;
     }
     .footerLinksItem{
         margin-bottom: 0;
+        margin: 0.5em  1em 0.5em 1em;
     }
 }
 .inputContainerBtn{
-    position: relative;
     margin-bottom: 1.5em;
 
     &focus svg{
