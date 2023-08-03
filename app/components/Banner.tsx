@@ -61,6 +61,7 @@ export function Banner() {
                   boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                   borderRadius: "0.2em",
                   padding: "0 0.5em 0 0.5em",
+                  objectFit: "cover",
                 }}
               />
             </div>

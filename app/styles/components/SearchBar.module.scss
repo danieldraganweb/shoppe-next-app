@@ -23,6 +23,7 @@
         padding: 0.5em 0.5em;
         box-sizing: border-box;
         overflow: hidden;
+        // background-color: aquamarine;
     }
     .searchBarContainer {
         margin: 0 auto;
@@ -57,9 +58,13 @@
         }
     }
     @media screen and (max-width: 350px) {
+        .searchBarWrapper{
+         margin-top: 0;
+        }
         .searchBarContainer{
             width: 100%;
             max-width: 350px;
+            // margin-top: 0.2em;
         } 
 }
 }
